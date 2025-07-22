@@ -18,7 +18,11 @@ const Forum = () => {
     <div className="forum-container">
       <div className="comments-section">
         {comments.length === 0 ? (
-          <div className="no-comments">No comments yet. Be the first to share your thoughts!</div>
+          <div className="forum-empty-centered">
+            <div className="forum-empty-icon">💬</div>
+            <div className="forum-empty-title">No comments yet</div>
+            <div className="forum-empty-desc">Be the first to start a conversation about your favorite movies!</div>
+          </div>
         ) : (
           comments.map((comment) => (
             <div className="comment-box" key={comment.id}>

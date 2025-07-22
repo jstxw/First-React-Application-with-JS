@@ -33,6 +33,42 @@
   line-height: 1.6;
 }
 
+.favorites-empty-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  margin: 2rem auto;
+  max-width: 500px;
+  padding: 3rem 2rem;
+}
+
+.favorites-empty-icon {
+  font-size: 3.5rem;
+  color: #e50914;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 2px 8px #e5091440);
+}
+
+.favorites-empty-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.favorites-empty-desc {
+  color: #bbb;
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
 /* Animation for new favorites being added */
 @keyframes fadeIn {
   from {

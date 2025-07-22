@@ -8,8 +8,10 @@ const Favorites = () => {
 
   if (favorites.length === 0) {
     return (
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh', fontSize: '1.5rem', color: '#888' }}>
-        No favorites yet.
+      <div className="favorites-empty-centered">
+        <div className="favorites-empty-icon">★</div>
+        <div className="favorites-empty-title">No favorites yet</div>
+        <div className="favorites-empty-desc">You haven't added any movies to your favorites.<br/>Browse and add some!</div>
       </div>
     );
   }
