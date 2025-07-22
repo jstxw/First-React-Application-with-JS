@@ -26,8 +26,23 @@ function Home() {
     loadpopularmovies();
   }, []); // run once
 
-  const handleSearch = () => {
-    // add search functionality here
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    if (!searchQuery.trim()) return; //trim all the spaces during the search
+    if (loading) return; //unable to search for something else when searching
+
+    setloading(true); //show loading once searched
+
+    try {
+      const searchResults = await searchMovies(searchQuery);
+      setMovies(searchResults);
+      setError(null);
+    } catch (err) {
+      console.log(err);
+      setError("Failed to search for movies...");
+    } finally {
+      setloading(false);
+    }
   };
 
   return (
