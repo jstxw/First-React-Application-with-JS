@@ -6,6 +6,8 @@
   transition: transform 0.2s;
   height: 100%;
   display: flex;
+  width: 350px;
+  flex: auto;
   flex-direction: column;
 }
 
@@ -72,6 +74,7 @@
   z-index: 2;
   transition: background-color 1s;
   cursor: pointer;  
+  width: 50px;
   
 }
 
