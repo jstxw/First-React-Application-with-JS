@@ -4,15 +4,18 @@ import "../css/Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Link to="/" className="navbar-brand">
-        Movie
+      <Link to="/Home" className="navbar-brand navbar-brand-glow">
+        MovieFinder
       </Link>
       <div className="navbar-links">
         <Link to="/Favorites" className="nav-link">
           Favorites
         </Link>
-        <Link to="/" className="nav-link">
+        <Link to="/Home" className="nav-link">
           Home
+        </Link>
+        <Link to="/Forum" className="nav-link">
+          Forum
         </Link>
       </div>
     </div>

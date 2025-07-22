@@ -12,6 +12,17 @@
   font-weight: bold;
   color: white;
   text-decoration: none;
+  text-align: center;
+}
+
+.navbar-brand-glow {
+  color: #ff2a2a;
+  text-shadow:
+    0 0 8px #ff2a2a,
+    0 0 16px #ff2a2a,
+    0 0 24px #554848,
+    0 0 32px #ff2a2a;
+  transition: text-shadow 0.2s;
 }
 
 .navbar-links {

@@ -9,13 +9,12 @@ export const MovieProvider = ({ children }) => {
   //look inside local storage and see if there are already any favorited movies
   useEffect(() => {
     const storedFavs = localStorage.getItem("favorites");
-
     if (storedFavs) setFavorites(JSON.parse(storedFavs)); //local storage can only store strings
-    //edit local storage when favorites change
-    useEffect(() => {
-      localStorage.setItem("favorites", JSON.stringify(favorites));
-    }, [favorites]);
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }, [favorites]);
 
   const addToFavorites = (movie) => {
     setFavorites((prev) => [...prev, movie]);
@@ -25,14 +24,14 @@ export const MovieProvider = ({ children }) => {
     setFavorites((prev) => prev.filter((movie) => movie.id !== movieId));
   };
 
-  const isFavorite = (movieId) => {
+  const isFavorites = (movieId) => {
     return favorites.some((movie) => movie.id === movieId);
   };
 
   const value = {
     favorites,
-    setFavorites,
-    isFavorite,
+    removeFromFavorites,
+    isFavorites,
     addToFavorites,
   };
 
