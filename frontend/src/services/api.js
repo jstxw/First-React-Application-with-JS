@@ -16,20 +16,3 @@ export const searchMovies = async (query) => {
   const data = await response.json();
   return data.results;
 };
-
-function App() {
-  return (
-    <>
-      <Text display="hello world"></Text>
-      <Text display="hello world"></Text>
-    </>
-  );
-}
-
-function Text({ display }) {
-  return (
-    <div>
-      <p>{display}</p>
-    </div>
-  );
-}
