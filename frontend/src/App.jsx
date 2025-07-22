@@ -19,7 +19,6 @@ function App() {
           <Route path="/Favorites" element={<Favorites />} />
           <Route path="/Forum" element={<Forum />} />
         </Routes>
-        <BottomNavBar />
       </MovieProvider>
     </>
   );
