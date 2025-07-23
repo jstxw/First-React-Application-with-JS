@@ -1,9 +1,8 @@
 import "./css/MovieCard.css";
 import { useMovieContext } from "./Contexts/MovieContext";
 
-function MovieCard({ movie }) {
-  const { isFavorites, addToFavorites, removeFromFavorites } =
-    useMovieContext();
+function UpcomingCard({ movie }) {
+  const { isFavorites, addToFavorites, removeFromFavorites } = useMovieContext();
   const favorite = isFavorites(movie.id);
   function onClick(e) {
     e.preventDefault();
@@ -19,7 +18,7 @@ function MovieCard({ movie }) {
           alt={movie.title}
         />
         <div className="movie-overlay">
-          <span className="upcoming-label">Movie</span>
+          <span className="upcoming-label">Upcoming</span>
           <button
             className={`favorite-btn ${favorite ? "active" : ""}`}
             onClick={onClick}
@@ -36,4 +35,4 @@ function MovieCard({ movie }) {
   );
 }
 
-export default MovieCard;
+export default UpcomingCard; 

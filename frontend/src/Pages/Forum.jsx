@@ -1,36 +1,15 @@
 import React, { useState } from "react";
 import "../css/Forum.css";
+import Auth from "../Pages/AuthenticationPage";
 
-const Forum = () => {
-  const [comments, setComments] = useState([]);
-  const [input, setInput] = useState("");
-
-  const handleInputChange = (e) => setInput(e.target.value);
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (input.trim()) {
-      setComments([{ text: input, id: Date.now() }, ...comments]);
-      setInput("");
-    }
-  };
-
+function Forum() {
   return (
-    <div className="forum-container">
-      <div className="comments-section"></div>
-      <form className="comment-form" onSubmit={handleSubmit}>
-        <input
-          className="comment-input"
-          type="text"
-          placeholder="Type your comment about your favorite movie..."
-          value={input}
-          onChange={handleInputChange}
-        />
-        <button className="comment-submit" type="submit">
-          Post
-        </button>
-      </form>
-    </div>
+    <>
+      <div>
+        <Auth />
+      </div>
+    </>
   );
-};
+}
 
 export default Forum;

@@ -1,7 +1,7 @@
 import "./css/MovieCard.css";
 import { useMovieContext } from "./Contexts/MovieContext";
 
-function MovieCard({ movie }) {
+function TVCard({ movie }) {
   const { isFavorites, addToFavorites, removeFromFavorites } =
     useMovieContext();
   const favorite = isFavorites(movie.id);
@@ -16,10 +16,10 @@ function MovieCard({ movie }) {
       <div className="movie-poster">
         <img
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-          alt={movie.title}
+          alt={movie.name}
         />
         <div className="movie-overlay">
-          <span className="upcoming-label">Movie</span>
+          <span className="upcoming-label">TV</span>
           <button
             className={`favorite-btn ${favorite ? "active" : ""}`}
             onClick={onClick}
@@ -29,11 +29,11 @@ function MovieCard({ movie }) {
         </div>
       </div>
       <div className="movie-info">
-        <h3>{movie.title}</h3>
-        <p>{movie.release_date}</p>
+        <h3>{movie.name}</h3>
+        <p>{movie.first_air_date}</p>
       </div>
     </div>
   );
 }
 
-export default MovieCard;
+export default TVCard;

@@ -12,7 +12,13 @@ const Navbar = () => {
           Favorites
         </Link>
         <Link to="/Home" className="nav-link">
-          Home
+          Movies
+        </Link>
+        <Link to="/Home2" className="nav-link">
+          TV Shows
+        </Link>
+        <Link to="/Upcoming" className="nav-link">
+          Upcoming
         </Link>
         <Link to="/Forum" className="nav-link">
           Forum
