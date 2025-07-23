@@ -16,21 +16,7 @@ const Forum = () => {
 
   return (
     <div className="forum-container">
-      <div className="comments-section">
-        {comments.length === 0 ? (
-          <div className="forum-empty-centered">
-            <div className="forum-empty-icon">💬</div>
-            <div className="forum-empty-title">No comments yet</div>
-            <div className="forum-empty-desc">Be the first to start a conversation about your favorite movies!</div>
-          </div>
-        ) : (
-          comments.map((comment) => (
-            <div className="comment-box" key={comment.id}>
-              {comment.text}
-            </div>
-          ))
-        )}
-      </div>
+      <div className="comments-section"></div>
       <form className="comment-form" onSubmit={handleSubmit}>
         <input
           className="comment-input"
@@ -39,10 +25,12 @@ const Forum = () => {
           value={input}
           onChange={handleInputChange}
         />
-        <button className="comment-submit" type="submit">Post</button>
+        <button className="comment-submit" type="submit">
+          Post
+        </button>
       </form>
     </div>
   );
 };
 
-export default Forum; 
+export default Forum;
