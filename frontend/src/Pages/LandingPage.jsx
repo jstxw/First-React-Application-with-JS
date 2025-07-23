@@ -1,4 +1,4 @@
-import "/Users/Ssivf/vs code projects/NoMovieFOMO/frontend/src/css/LandingPage.css";
+import "../css/LandingPage.css";
 import { useNavigate } from "react-router-dom";
 import Backgroundlanding from "../backgroundlandingpage";
 
