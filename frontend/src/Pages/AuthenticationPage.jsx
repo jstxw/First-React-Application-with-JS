@@ -8,14 +8,14 @@ import Forum from "./Forum";
 //cookies are used to keep users authenticated through cookies assiociated with users that are logged in
 
 const Auth = (props) => {
-  const { setIsAuth } = props;
+  const { setisAuth } = props; //from forum.jsx
   const navigate = useNavigate();
   const signinWithGoogle = async () => {
     try {
       const result = await signInWithPopup(auth, provider);
       cookies.set("auth-token", result.user.refreshToken);
       navigate("/Forum");
-      setIsAuth(true);
+      setisAuth(true);
     } catch (err) {
       console.log(err);
     }
