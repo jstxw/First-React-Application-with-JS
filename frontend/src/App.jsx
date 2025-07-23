@@ -17,7 +17,7 @@ function App() {
       <MovieProvider>
         <Navbar />
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Home2" element={<Home2 />} />
           <Route path="/Upcoming" element={<Upcoming />} />
           <Route path="/Favorites" element={<Favorites />} />

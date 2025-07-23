@@ -4,14 +4,14 @@ import "../css/Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <Link to="/Home" className="navbar-brand navbar-brand-glow">
+      <Link to="/" className="navbar-brand navbar-brand-glow">
         MovieFinder
       </Link>
       <div className="navbar-links">
         <Link to="/Favorites" className="nav-link">
           Favorites
         </Link>
-        <Link to="/Home" className="nav-link">
+        <Link to="/" className="nav-link">
           Movies
         </Link>
         <Link to="/Home2" className="nav-link">
