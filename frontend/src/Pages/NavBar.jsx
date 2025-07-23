@@ -7,12 +7,12 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <Link to="/" className="navbar-brand navbar-brand-glow">
-        MovieFinder
+        NoMovieFOMO
       </Link>
       <div className="navbar-links">
-        <Link to="/" className="nav-link nav-movies">
+        <Link to="/Home" className="nav-link nav-movies">
           Movies
-          {currentPath === "/" && <span className="nav-active-bubble" />}
+          {currentPath === "/Home" && <span className="nav-active-bubble" />}
         </Link>
         <Link to="/Home2" className="nav-link nav-tv">
           TV Shows
