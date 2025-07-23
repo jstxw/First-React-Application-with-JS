@@ -113,7 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(120deg, #f8fafc 0%, #e3e6ee 100%);
+  background: #000;
 }
 
 .auth-card {
