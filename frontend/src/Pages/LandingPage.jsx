@@ -11,7 +11,6 @@ function Landing() {
   };
   return (
     <div>
-      <Navbar />
       <div className="backgroundlanding" style={{ height: "100%" }}>
         <Backgroundlanding />
 
@@ -43,7 +42,12 @@ function Landing() {
         <h1>Developer's Notes</h1>
         <div className="aboutme-quote">by Justin Wang</div>
         <div className="aboutmetext">
-          NoMovieFOMO was developed for Shipwrecked 2025 to help movie enthusiasts stay updated with the latest releases and engage in meaningful discussions. Our platform is designed to make it easy to discover trending movies, TV shows, and connect with a vibrant community. We hope you enjoy exploring and sharing your passion for film with others.
+          NoMovieFOMO was developed for Shipwrecked 2025 to help movie
+          enthusiasts stay updated with the latest releases and engage in
+          meaningful discussions. Our platform is designed to make it easy to
+          discover trending movies, TV shows, and connect with a vibrant
+          community. We hope you enjoy exploring and sharing your passion for
+          film with others.
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@ function App() {
   return (
     <>
       <MovieProvider>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/Home" element={<Home />} />
