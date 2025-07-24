@@ -1,6 +1,7 @@
 import "../css/LandingPage.css";
 import { useNavigate } from "react-router-dom";
 import Backgroundlanding from "../backgroundlandingpage";
+import Navbar from "./NavBar";
 
 function Landing() {
   const navigate = useNavigate();
@@ -10,15 +11,14 @@ function Landing() {
   };
   return (
     <div>
+      <Navbar />
       <div className="backgroundlanding" style={{ height: "100%" }}>
         <Backgroundlanding />
 
         <div className="landing-container">
           <div className="landing-overlay"></div>
           <div className="landing-content">
-            <h1 className="landing-title">
-              Awkward in Conversations? Learn to Socialize Using
-            </h1>
+            <h1 className="landing-title"></h1>
             <h2 className="landing-title2">NoMovieFOMO</h2>
             <p className="landing-subtitle">
               Movies, TV Shows, and Live Discussions.
@@ -36,18 +36,14 @@ function Landing() {
                 </button>
               </div>
             </div>
-            <div className="aboutmecontainer">
-              <h1>Developer's Notes</h1>
-              <div className="aboutme-quote">by Justin Wang</div>
-              <div className="aboutmetext">
-                This website was created as part of Shipwrecked 2025. As a movie
-                fanatic, I sometimes have a hard time keeping track of the
-                latest movies to watch. I know a lot of other young people feel
-                the same way. This website fixes that, alongside a live chat to
-                discuss plot twists, cliff hangers, and dramas with others.
-              </div>
-            </div>
           </div>
+        </div>
+      </div>
+      <div className="aboutmecontainer">
+        <h1>Developer's Notes</h1>
+        <div className="aboutme-quote">by Justin Wang</div>
+        <div className="aboutmetext">
+          NoMovieFOMO was developed for Shipwrecked 2025 to help movie enthusiasts stay updated with the latest releases and engage in meaningful discussions. Our platform is designed to make it easy to discover trending movies, TV shows, and connect with a vibrant community. We hope you enjoy exploring and sharing your passion for film with others.
         </div>
       </div>
     </div>
