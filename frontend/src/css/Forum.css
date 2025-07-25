@@ -124,6 +124,7 @@
 .message-content {
     max-width: 100%;
     min-width: 120px;
+    justify-content: flex-end;
 }
 
 .message-header {
@@ -145,6 +146,7 @@
 .own-message .username {
     color: #e50914;
     font-weight: 800;
+    justify-content: flex-end;
 }
 
 /* Other users get different colors based on their name */
