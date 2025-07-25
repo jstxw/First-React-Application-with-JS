@@ -6,7 +6,7 @@
   </a>
 </div>
 
-# NoMovieFOMO
+#
 
 **NoMovieFOMO** is a modern web app for movie and TV show enthusiasts to discover trending content, keep track of favorites, and join live discussions with others. Built as part of Shipwrecked 2025, it aims to help users stay up-to-date with the latest releases and connect with fellow fans.
 

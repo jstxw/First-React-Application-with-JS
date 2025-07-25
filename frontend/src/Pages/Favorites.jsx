@@ -1,4 +1,4 @@
-import React from "react";
+import react from "react";
 import { useMovieContext } from "../Contexts/MovieContext";
 import MovieCard from "../MovieCard";
 import TVCard from "../TVCard";
@@ -22,7 +22,11 @@ const Favorites = () => {
       <div className="favorites-empty-centered">
         <div className="favorites-empty-icon">★</div>
         <div className="favorites-empty-title">No favorites yet</div>
-        <div className="favorites-empty-desc">You haven't added any movies to your favorites.<br/>Browse and add some!</div>
+        <div className="favorites-empty-desc">
+          You haven't added any movies to your favorites.
+          <br />
+          Browse and add some!
+        </div>
       </div>
     );
   }
@@ -33,7 +37,8 @@ const Favorites = () => {
         {favorites.map((item) => {
           const type = getMediaType(item);
           if (type === "tv") return <TVCard movie={item} key={item.id} />;
-          if (type === "upcoming") return <UpcomingCard movie={item} key={item.id} />;
+          if (type === "upcoming")
+            return <UpcomingCard movie={item} key={item.id} />;
           return <MovieCard movie={item} key={item.id} />;
         })}
       </div>

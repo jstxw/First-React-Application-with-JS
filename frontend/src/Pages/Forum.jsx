@@ -26,16 +26,6 @@ function Forum() {
     "https://ui-avatars.com/api/?name=User&background=23272f&color=fff";
   const user = auth.currentUser;
 
-  if (!isAuth) {
-    return (
-      <>
-        <div>
-          <Auth setisAuth={setisAuth} />
-        </div>
-      </>
-    );
-  }
-
   useEffect(() => {
     //useEffect cleanup to prevent memory leaks
     const queryMessages = query(messageRef);
@@ -66,6 +56,15 @@ function Forum() {
     setTypeQuery("");
   };
 
+  if (!isAuth) {
+    return (
+      <>
+        <div>
+          <Auth setisAuth={setisAuth} />
+        </div>
+      </>
+    );
+  }
   return (
     <div className="forum-container">
       {/* Header */}
